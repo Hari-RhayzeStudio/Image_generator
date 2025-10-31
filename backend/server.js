@@ -62,7 +62,8 @@ const productSchema = new mongoose.Schema({
 
 // Helper function to check fulfillment status
 function checkFulfillment(product) {
-  const urlsFilled = product['Wax Image URL'] &&
+  const urlsFilled = product['Pre-Image URL'] &&
+                     product['Wax Image URL'] &&
                      product['Cast Image URL'] &&
                      product['Final Image URL'];
                      
